@@ -7,6 +7,9 @@ import VisitPage from './pages/VisitPage';
 import LogIn from './pages/LogIn'; // Assuming you have a VisitPage component
 import Nav from './components/Nav'; // Assuming you have a Nav component
 import './App.css';
+import DoctorHome from './pages/DoctorHome';
+import MedicalHomePage from './pages/MedicalHomePage';
+
 
 // Create the router configuration
 const router = createBrowserRouter([
@@ -23,6 +26,16 @@ const router = createBrowserRouter([
   {
     path: "/Login",
     element: <LogIn />,
+    // Add loader if needed: loader: visitPageLoader,
+  },
+  {
+    path: "/DoctorHome",
+    element: <DoctorHome />,
+    // Add loader if needed: loader: visitPageLoader,
+  },
+  {
+    path: "/MedicalHomePage",
+    element: <MedicalHomePage />,
     // Add loader if needed: loader: visitPageLoader,
   },
 ]);
